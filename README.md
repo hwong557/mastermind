@@ -1,3 +1,5 @@
+# Mastermind brute force assistant
+
 Mastermind is a two player game where one player (the codemaker) makes a secret code, and the other player (the guesser) has 10 attempts to guess the secret code.
 This project is a "mastermind brute force assistant".
 Given a list of attempted codes, the number of colors in correct slots, and number of colors in wrong slots, this script returns a list of possible secret codes.
