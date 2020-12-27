@@ -37,8 +37,8 @@ colors = {
 class Code:
     def __init__(self,
             code: Union[str, List[str], List[int]],
-            num_correct: int = None,
-            num_permute: int = None,
+            black: int = None,
+            white: int = None,
             ) -> None:
         assert len(code)==4
         self.code: List[int]
@@ -49,8 +49,8 @@ class Code:
         #     self.code = [ colors[color] for color in code ]
         # elif isinstance(code, List[int]):
         #     self.code = code
-        self.num_correct = num_correct
-        self.num_permute = num_permute
+        self.num_correct = black
+        self.num_permute = white
 
     def __repr__(self) -> str:
         num_to_color = {
