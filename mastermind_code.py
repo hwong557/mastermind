@@ -1,5 +1,6 @@
 """
 This is the "code" class, which represents a code, number of right color right position pegs, and number of right color wrong position pegs.
+There are functions to check if a given is compatible with another code, given number of correct position and wrong position pegs.
 """
 
 import numpy as np

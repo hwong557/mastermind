@@ -1,8 +1,5 @@
 """
-This is the main method that
-
-https://www.archimedes-lab.org/mastermind.html
-
+This contains code to winnow down to the secret code.
 """
 
 from mastermind_code import Code

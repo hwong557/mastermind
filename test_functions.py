@@ -1,8 +1,3 @@
-
-# tests
-
-# test = np.array(range(16)).reshape((4, 4))
-
 from mastermind_code import Code
 import assistant
 
