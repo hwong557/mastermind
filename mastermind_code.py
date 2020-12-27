@@ -67,7 +67,6 @@ class Code:
     def __eq__(self, other) -> bool:
         return self.code == other.code and self.num_correct == other.num_correct and self.num_permute == other.num_permute
 
-    # other should be type "Code"
     def is_correct_compatible_with(self, other: 'Code') -> bool:
         num_correct = self.num_correct
         us = np.array(self.code)
@@ -75,8 +74,7 @@ class Code:
         # print(self)
         return np.sum(us == them) == num_correct
 
-    # other should be type "Code"
-    def is_permute_compatible_with(self, other) -> bool:
+    def is_permute_compatible_with(self, other: 'Code') -> bool:
         """
         """
         us = np.array(self.code)
@@ -97,6 +95,7 @@ class Code:
                     break
         # print(self)
         # print(comparison_matrix)
+        # Prepare to sum the off-diagonals.
         for i in range(4):
             comparison_matrix[i, i] = 0
         return np.sum(comparison_matrix) == self.num_permute
